@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Orders</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+</header>
+
+<section class="products">
+    <h2>Your Order History</h2>
+    <div id="orderList"></div>
+</section>
+
+<script>
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
+let orderList = document.getElementById("orderList");
+
+if (orders.length === 0) {
+    orderList.innerHTML = "<p>No orders yet 😔</p>";
+}
+
+orders.forEach((order, index) => {
+    let itemsHTML = "";
+    order.items.forEach(item => {
+        itemsHTML += `<p>• ${item.name} - ₹${item.price}</p>`;
+    });
+
+    orderList.innerHTML += `
+        <div class="product">
+            <h3>Order #${index + 1}</h3>
+            ${itemsHTML}
+            <p><strong>Total:</strong> ₹${order.total}</p>
+            <p><strong>Payment:</strong> ${order.payment}</p>
+            <p><strong>Date:</strong> ${order.date}</p>
+        </div>
+    `;
+});
+</script>
+
+</body>
+</html>
