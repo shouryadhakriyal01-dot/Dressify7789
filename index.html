@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title><link href="brand-name">WELCOME TO DRESSIFY</title>
+    <title><link href=DRESSIFY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<div class="bottom-nav">
+    <div class="nav-item" onclick="goHome()">
+        🏠
+        <span>Home</span>
+    </div>
+
+    <div class="nav-item" onclick="filterProduct('men')">
+        👕
+        
+        <span>Men</span>
+    </div>
+
+    <div class="nav-item" onclick="filterProducts('women')">
+        👗
+        <span>Women</span>
+    </div>
+
+    <div class="nav-item" onclick="goCart()">
+        🛒
+        <span>Cart</span>
+    </div>
+
+    <div class="nav-item" onclick="goOrders()">
+        📦
+        <span>Orders</span>
+    </div>
+</div>
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+    <img id="fullImage">
+</div>
+<div id="splash">
+    <h1 class="splash-logo">DRESSIFY</h1>
+</div>
+<body>
+  <div id="loader">
+    <h1 class="loader-logo">DRESSIFY</h1>
+</div>
+  <!-- Header -->
+<header>
+    <h1>DRESSIFY</h1>
+   
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1 class="brand-name">WELCOME TO DRESSIFY</h1>
+    <h2>New Collection 2026</h2>
+    <p>Trendy Clothes at Best Price</p>
+    <button>Shop Now</button>
+</section>
+</div>
+
+<!-- Products -->
+<section class="products">
+  <section class="products">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+</section>
+</div>
+<section class="products">
+    <h2>Trending Products</h2>
+
+    <div class="product-row">
+        <div class="product">
+            <img src="sweater.jpg">
+            <h3>women sweater</h3>
+            <p>₹599</p>
+        </div>
+
+        <div class="product">
+            <img src="images/dress.jpg">
+            <h3>Women Dress</h3>
+            <p>₹1299</p>
+        </div>
+
+        <div class="product">
+            <img src="images/top.jpg">
+            <h3>Top Wear</h3>
+            <p>₹599</p>
+        </div>
+    </div>
+</section>
+<section class="products">
+  </div
+<section class="products">
+    <div class="product-row">
+        <div class="product">
+            <img src="images/shirt.jpg">
+            <h3>Men Shirt</h3>
+            <p>₹799</p>
+        </div>
+
+        <div class="product">
+            <img src="images/dress.jpg">
+            <h3>Women Dress</h3>
+            <p>₹1299</p>
+        </div>
+
+        <div class="product">
+            <img src="images/top.jpg">
+            <h3>Top Wear</h3>
+            <p>₹599</p>
+        </div>
+    </div>
+</section>
+    <h2>Our Products</h2>
+    <div class="product-list">
+        <div class="product">
+          <div class="image-gallery">
+    <img src="kurti1.jpg" onclick="openImage(this.src)">
+    <img src="kurti2.jpg" onclick="openImage(this.src)">
+    <img src="kurti3.jpg" onclick="openImage(this.src)">
+</div>
+            <h3>kurti</h3>
+            <p>₹499</p>
+            <button onclick="addToCart('Men Shirt', 499)">Add to Cart</button>
+            <button onclick="orderWhatsApp()">Order on WhatsApp</button>
+        </div>
+
+        <div class="product">
+        <img src="sweater.jpg" onclick="openImage(this.src)">
+            <h3>trendy sweater</h3>
+            <p>599</p>
+            <button onclick="addToCart(' sweater', 599)">Add to Cart</button>
+            <button onclick="orderWhatsApp()">Order on WhatsApp</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 DRESSIFY | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</div>
+</body>
+</html>
